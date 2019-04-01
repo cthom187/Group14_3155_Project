@@ -1,6 +1,6 @@
 class SubjectsController < ApplicationController
   def index
-    @subjects = Subject.all
+    @subjects = Subject.pluck(:subject)
   end
   
   def show

@@ -1,6 +1,7 @@
 <h1>Subjects#index</h1>
 <p>subjects page</p>
-
+<%= link_to 'New Subject', new_subject_path %>
+<p></p>
 <table>
     <tr>
         <th>Subject</th>
@@ -8,7 +9,7 @@
     
     <%= @subjects.each do |s| %>
     <tr>
-           <td><%= s.subject %></td> 
+           <td><%= link_to s, controller: 'courses' %></td> 
         </tr>
     <% end %>
 </table>
