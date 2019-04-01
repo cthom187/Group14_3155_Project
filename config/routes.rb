@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'courses/index'
   get 'subjects/index'
   get 'subjects/show'
   root 'subjects#index'
