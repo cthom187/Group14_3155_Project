@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'comments/index'
+  get 'professors/index'
   get 'courses/index'
   get 'subjects/index'
   get 'subjects/show'
